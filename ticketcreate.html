@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نیافام من</title>
+    <link rel="shortcut icon" href="/uploads/myniafam/assets/img/logo.svg" type="image/x-icon">
+    <link rel="icon" href="/uploads/myniafam/assets/img/logo.svg" type="image/x-icon">
+
+    <link rel="preload" href="/uploads/myniafam/assets/fonts/Sahel-VF.woff2" as="font" type="font/woff" crossorigin />
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/select2/select2.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/iziToast/iziToast.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/OverlayScrollbars/overlayscrollbars.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/jalalidatepicker/jalalidatepicker.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/switchery/switchery.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/plyr/plyr.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/realuploader/realUploader.classic.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/espritstyle.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/main.css">
+
+</head>
+
+<body dir="rtl">
+    <div class="wrapper">
+        <div class="layout" data-menu-open="false">
+
+            <div id="sidebar"></div>
+            <div id="header" class="layout__header"></div>
+            <div class="layout__container">
+                <div class="layout__content">
+                    <div class="scrollbar">
+                        <div class="inpage">
+                            <div id="main-content" class="inpage">
+                                <div class="page-header">
+                                    <h2 class="text__20 text__700 ">ثبت تیکت جدید</h2>
+                                </div>
+                                <form id="createticket" method="post" class="form">
+                                    <div class="form__content">
+                                        <div class="item text__500 text__14" data-size="half">
+                                            <label>موضوع تیکت <span class="required">*</span></label>
+                                            <div class="combobox">
+                                                <select name="subj" id="subj">
+                                                    <option></option>
+                                                    <option value="1">گزارش مشکل (باگ یا خطا)</option>
+                                                    <option value="2">درخواست راهنمایی (سؤال)</option>
+                                                    <option value="3">درخواست بهبود یا تغییر</option>
+                                                    <option value="4">اعتراض یا شکایت</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="item text__500 text__14" data-size="half">
+                                            <label for="priority">اولویت تیکت <span class="required">*</span></label>
+                                            <div class="combobox">
+                                                <select name="priority" id="priority">
+                                                    <option></option>
+                                                    <option value="1">بحرانی</option>
+                                                    <option value="2">بالا</option>
+                                                    <option value="3">متوسط</option>
+                                                    <option value="4">کم</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="item text__500 text__14" data-size="full">
+                                            <label for="title">عنوان تیکت <span class="required">*</span></label>
+                                            <div class="input">
+                                                <input type="text" name="title" id="title" placeholder="بنویسید">
+                                            </div>
+
+                                        </div>
+                                        <div class="item text__500 text__14" data-size="full">
+                                            <label for="description">توضیحات کامل <span
+                                                    class="required">*</span></label>
+                                            <div class="input">
+                                                <textarea name="description" id="description" rows="4"></textarea>
+                                            </div>
+
+                                        </div>
+                                        <!-- <div class="item text__500 text__14 audio-plugin" data-size="full">
+                                            <label for="voice_record" class="mb-0">ضبط صدا</label>
+                                            <button id="record-audio"
+                                                class="button button--md button--gray text__12 text__600" type="button">
+                                                ضبط صدا
+                                            </button>
+                                            <div id="audio-output" class="mt-2"></div>
+
+                                        </div> -->
+
+                                        <div class="item text__500 text__14" data-size="full">
+                                            <hr>
+                                        </div>
+                                        <div class="item text__500 text__14" data-size="full">
+                                            <label for="attachments">بارگذاری فایل های مرتبط:</label>
+                                            <div id="attachments_uploader" class="es-realuploader help-unsaved" data-target="attachments"></div>
+                                            <input type="text" name="attachments" id="attachments" class="d-none">
+                                        </div>
+                                        <div class="item text__500 text__14" data-size="full">
+                                            <hr>
+                                        </div>
+                                        <div class="item text__500 text__14" data-size="full">
+                                            برای تسریع حل مشکلات حتما جزئیات زیر را تکمیل کنید:
+                                        </div>
+                                        <div class="item text__500 text__14" data-size="half">
+                                            <label for="relate_module">ماژول درگیر</label>
+                                            <div class="combobox">
+                                                <select name="relate_module" id="relate_module">
+                                                    <option></option>
+                                                    <option value="1">داشبورد</option>
+                                                    <option value="2">فرم ساز</option>
+                                                    <option value="3">ورود و عضویت</option>
+                                                    <option value="4">تحریریه خبر</option>
+                                                    <option value="5">فرآیند ساز</option>
+                                                    <option value="6">خبرنامه</option>
+                                                    <option value="7">تیکتینگ</option>
+                                                    <option value="8">گفتگوی آنلاین</option>
+                                                    <option value="9">کوتاه کننده لینک</option>
+                                                    <option value="10">سوالات متداول</option>
+                                                    <option value="11">انجمن - فروم</option>
+                                                    <option value="12">نوبت دهی آنلاین</option>
+                                                    <option value="13">پنل پیامکی</option>
+                                                    <option value="14">دیگر</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="item text__500 text__14" data-size="half">
+                                            <label for="problem_place">محل بروز مشکل</label>
+                                            <div class="combobox">
+                                                <select name="problem_place" id="problem_place">
+                                                    <option></option>
+                                                    <option value="1">محیط تست </option>
+                                                    <option value="2">تولید</option>
+                                                    <option value="3">نسخه قدیمی</option>
+                                                    <option value="4">نسخه جدید</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="item text__500 text__14" data-size="half">
+                                            <label for="approx_time">تاریخ شمسی</label>
+                                            <div class="input">
+                                                <input class="ltr jalalidatepicker" type="text" name="approx_time"
+                                                    id="approx_time" placeholder="" data-jdp>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="item text__500 text__14" data-size="half">
+                                            <label for="version">ورژن نرم افزار</label>
+                                            <div class="input">
+                                                <input type="text" name="version" id="version" placeholder="بنویسید">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form__buttons ">
+                                        <a asp-controller="Person" asp-action="Index" class="button text__14 text__500"
+                                            data-type="dismiss">بازگشت</a>
+                                        <button class="button text__14 text__500" type="submit"
+                                            data-type="submit">ثبت</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- اسکریپت‌ها -->
+    <script src="/uploads/myniafam/assets/js/libs/jquery/jquery.min.js"></script>
+    <script>
+        // Load layout components
+        $("#header").load("uploads/myniafam/components/header.html");
+        $("#sidebar").load("uploads/myniafam/components/sidebar.html");
+    </script>
+    <script src="/uploads/myniafam/assets/js/libs/jquery-validation/jquery.validate.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/jquery-validation/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/jalalidatepicker/jalalidatepicker.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/switchery/switchery.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/tinymce/tinymce.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/select2/select2.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/iziToast/iziToast.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/OverlayScrollbars/overlayscrollbars.browser.es6.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/plyr/plyr.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/realuploader/realuploader.js"></script>
+
+    <!-- لود کردن ماژول‌های Niafam -->
+    <script src="uploads/myniafam/assets/js/utils/validation.js"></script>
+    <script src="uploads/myniafam/assets/js/utils/alert.js"></script>
+
+    <script src="/uploads/myniafam/assets/js/common.js"></script>
+    <script type="module" src="/uploads/myniafam/assets/js/main.js"></script>
+
+    <script>
+        $(function () {
+            initAllAudioPlugins();
+            var attachments = initRealUploader($, {
+                "name": "attachments",
+                "elem": "#attachments_uploader",
+                "resize": false,
+                "ext": "",
+                "formid": "1",
+                "accept": "*/*",
+                "description": "",
+                "maxsize": "10240000",
+                "minsize": "1024",
+                "max": 10,
+                "min": 1
+            });
+        });
+    </script>
+</body>
+
+</html>

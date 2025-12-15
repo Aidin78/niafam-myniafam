@@ -1,0 +1,209 @@
+.login-page {
+    height: 100vh;
+    display: flex;
+
+    &__intro {
+        background-color: #2B3A4A;
+        box-shadow: 0px 4px 23px 0px #0000001A;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        min-height: 100%;
+        background-image: url(../img/login-mask.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 110% 100%;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            max-width: 60%;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        @include respond-to(lg) {
+            display: none;
+        }
+    }
+
+    &__form {
+        flex-shrink: 0;
+        padding: 32px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+            width: 348px;
+            text-align: center;
+        }
+
+        .page-title {
+            margin-bottom: 20px;
+        }
+
+        .desc {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 15px;
+            margin-bottom: 42px;
+
+            span:not(.line) {
+                flex-shrink: 0;
+            }
+
+            .line {
+                flex-grow: 1;
+                display: flex;
+                height: 1px;
+                background-color: #D9D9D9;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 24px;
+
+            input {
+                height: 42px;
+                gap: 10px;
+                border-radius: 10px;
+                border: 2px solid #e6e6e6;
+                text-align: center;
+                color: #2B3A4A;
+                outline: unset;
+
+                &:focus {
+                    border-color: #2B3A4A;
+                }
+
+                &::placeholder {
+                    color: #929292;
+                }
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .button {
+                width: 100%;
+                border-radius: 10px;
+
+                &:first-child {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+
+        input {
+            background: transparent;
+            border-width: 2px;
+        }
+
+        @include respond-to(lg) {
+            width: 100%;
+            max-width: 100%;
+            background-color: #2B3A4A;
+            min-height: 100%;
+            background-image: url(../img/login-mask.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: 110% 100%;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .page-title {
+                color: #fff;
+            }
+
+            .desc {
+                color: #bdbdbd;
+
+                .line {
+                    background: #6e6e6e;
+                }
+            }
+
+            input {
+                background-color: #2B3A4A;
+                border-color: rgba($color: #fff, $alpha: 0.2) !important;
+                color: #fff !important;
+
+                &:focus {
+                    border-color: rgba($color: #fff, $alpha: 0.6) !important;
+                }
+            }
+
+            .logo {
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                max-width: 100px;
+                margin-inline-start: auto;
+                margin-inline-end: auto;
+                margin-bottom: 24px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .button {
+                background-color: inherit;
+                color: #eee;
+                border-color: #eee;
+
+                &[type="submit"] {
+                    background-color: #fff;
+                    border-color: #fff;
+                    color: #2B3A4A;
+                }
+            }
+        }
+    }
+
+}
+
+.forgetpass {
+    color: rgba($color: #000, $alpha: .9);
+    padding: 0 4px;
+    position: relative;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    &::before {
+        content: "";
+        display: flex;
+        width: 0;
+        height: 1px;
+        background-color: rgba($color: #000, $alpha: .8);
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.2s linear;
+        border-radius: 2px;
+    }
+
+    &:hover {
+        color: rgba($color: #000, $alpha: 1);
+        &::before{
+            width: 100%;
+        }
+    }
+}

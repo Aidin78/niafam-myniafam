@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نیافام من</title>
+    <link rel="shortcut icon" href="/uploads/myniafam/assets/img/logo.svg" type="image/x-icon">
+    <link rel="icon" href="/uploads/myniafam/assets/img/logo.svg" type="image/x-icon">
+
+    <link rel="preload" href="/uploads/myniafam/assets/fonts/Sahel-VF.woff2" as="font" type="font/woff" crossorigin />
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/select2/select2.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/iziToast/iziToast.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/OverlayScrollbars/overlayscrollbars.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/jalalidatepicker/jalalidatepicker.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/switchery/switchery.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/plyr/plyr.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/realuploader/realUploader.classic.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/espritstyle.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/datatables/dataTables.css">
+
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/main.css">
+
+</head>
+
+<body dir="rtl">
+    <div class="wrapper">
+        <div class="layout" data-menu-open="false">
+
+            <div id="sidebar"></div>
+            <div id="header" class="layout__header"></div>
+            <div class="layout__container">
+                <div class="layout__content">
+                    <div class="scrollbar">
+                        <div class="inpage">
+                            <div id="main-content" class="inpage">
+                                <div class="table-page">
+                                    <div class="page-title">
+                                        <h2 class="pagetitle text__20 text__700 mb-0">لیست تیکت ها</h2>
+                                        <a href="/ticketcreate.html" class="button text__14 button--add"
+                                            data-bs-toggle="modal" data-bs-target="#addPersonModal">
+                                            <img src="uploads/myniafam//assets/img/ico-plus.png" alt="" width="16"
+                                                height="15">
+                                            افرودن تیکت
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="filters">
+                                        <div class="input">
+                                            <input type="text" class="text__14" placeholder="بنویسید">
+                                        </div>
+                                        <div class="combobox">
+                                            <select name="relate_module" id="relate_module">
+                                                <option value="0">همه</option>
+                                                <option value="1">جدید</option>
+                                                <option value="2">در حال بررسی</option>
+                                                <option value="3">نیاز به اطلاعات</option>
+                                                <option value="4">ارجاع شده</option>
+                                                <option value="5">در حال انجام</option>
+                                                <option value="6">بسته شده</option>
+                                                <option value="7">بایگانی شده</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="table table-person">
+
+                                        <table class="datatable responsive dataTableDisplay">
+                                            <thead>
+                                                <tr>
+                                                    <th width="40%">تیکت</th>
+                                                    <th class="text-center">وضعیت</th>
+                                                    <th class="text-center">تاریخ ثبت</th>
+                                                    <th class="text-center" width="10%"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+                                        <div class="table__footer">
+                                            <div class="info text__13">
+
+                                            </div>
+                                            <div class="pagination pagination--left">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- اسکریپت‌ها -->
+    <script src="/uploads/myniafam/assets/js/libs/jquery/jquery.min.js"></script>
+    <script>
+        // Load layout components
+        $("#header").load("uploads/myniafam/components/header.html");
+        $("#sidebar").load("uploads/myniafam/components/sidebar.html");
+    </script>
+    <script src="/uploads/myniafam/assets/js/libs/jquery-validation/jquery.validate.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/jquery-validation/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/jalalidatepicker/jalalidatepicker.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/switchery/switchery.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/tinymce/tinymce.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/select2/select2.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/iziToast/iziToast.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/OverlayScrollbars/overlayscrollbars.browser.es6.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/plyr/plyr.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/realuploader/realuploader.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/datatables/dataTables.js"></script>
+
+
+    <!-- لود کردن ماژول‌های Niafam -->
+    <script src="uploads/myniafam/assets/js/utils/validation.js"></script>
+    <script src="uploads/myniafam/assets/js/utils/alert.js"></script>
+
+
+    <script src="/uploads/myniafam/assets/js/common.js"></script>
+    <script type="module" src="/uploads/myniafam/assets/js/main.js"></script>
+
+    <!-- اسکریپت صفحه تیکت‌ها -->
+    <script type="module" src="/uploads/myniafam/assets/js/api/ticket.js"></script>
+    <script type="module" src="/uploads/myniafam/assets/js/pages/tickets.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            const selects = document.querySelectorAll('.filters select');
+
+            selects.forEach(select => {
+                $(select).select2({
+                    placeholder: "انتخاب کنید"
+                })
+            });
+
+        });
+    </script>
+
+    <!-- مدال تأیید حذف تیکت -->
+    <div class="modal fade" id="deleteTicketModal" tabindex="-1" aria-labelledby="deleteTicketModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteTicketModalLabel">حذف تیکت</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>آیا از حذف این تیکت مطمئن هستید؟</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button button--outline" data-bs-dismiss="modal" data-type="dismiss">انصراف</button>
+                    <button type="button" class="button button--danger" id="confirmDeleteTicket">حذف</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
