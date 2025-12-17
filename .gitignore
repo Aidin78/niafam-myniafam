@@ -1,0 +1,31 @@
+# فایل‌های Markdown را نادیده بگیر
+*.md
+
+# فایل‌های سیستمی Windows
+Thumbs.db
+desktop.ini
+
+# فایل‌های سیستمی macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# فایل‌های موقت
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# پوشه node_modules (در صورت استفاده از Node.js)
+node_modules/
+
+# فایل‌های IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# فایل‌های Word موقت
+~$*.docx
+~$*.doc

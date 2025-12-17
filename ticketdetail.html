@@ -26,8 +26,251 @@
     <div class="wrapper">
         <div class="layout" data-menu-open="false">
 
-            <div id="sidebar"></div>
-            <div id="header" class="layout__header"></div>
+            <div id="sidebar">
+                <div class="layout__menu">
+                    <div class="accordion menu-list" id="accordionExample">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                            <div class="item">
+                                <a href="javascript:void(0)" class="link text__500 text__14 text__darker-gray"
+                                    data-page="dashboard">
+                                    <img src="/uploads/myniafam/assets/img/ico-dash.png" alt="Dashboard Icon" width="20"
+                                        height="20" />
+                                    <span>داشبورد</span>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed active"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapsePeople"
+                                    aria-expanded="false" aria-controls="flush-collapsePeople">
+                                    <img src="/uploads/myniafam/assets/img/ico-support.png" alt="User Management Icon"
+                                        width="20" height="20" />
+                                    <span>سامانه پشتیبانی</span>
+                                </a>
+                                <div id="flush-collapsePeople" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="ticketcreate.html" class="text__500 text__14 text__darker-gray">ثبت
+                                                تیکت</a></li>
+                                        <li><a href="ticketlist.html" class="text__500 text__14 text__darker-gray">لیست
+                                                تیکت ها</a></li>
+                                        <li><a href="ticketlist.html"
+                                                class="text__500 text__14 text__darker-gray">بایگانی</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- پنل پیام‌رسانی یکپارچه -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseMessaging"
+                                    aria-expanded="false" aria-controls="flush-collapseMessaging">
+                                    <img src="/uploads/myniafam/assets/img/ico-messaging.png" alt="Messaging Icon"
+                                        width="20" height="20" />
+                                    <span>پنل پیام‌رسانی</span>
+                                </a>
+                                <div id="flush-collapseMessaging" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">صندوق پیام‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">ارسال پیام</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">تنظیمات پیام‌رسانی</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- پایش و کنترل پروژه -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseProject"
+                                    aria-expanded="false" aria-controls="flush-collapseProject">
+                                    <img src="/uploads/myniafam/assets/img/ico-project.png"
+                                        alt="Project Monitoring Icon" width="20" height="20" />
+                                    <span>پایش پروژه</span>
+                                </a>
+                                <div id="flush-collapseProject" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">داشبورد پروژه</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">وضعیت کارها</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- مدیریت مالی -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFinance"
+                                    aria-expanded="false" aria-controls="flush-collapseFinance">
+                                    <img src="/uploads/myniafam/assets/img/ico-financial.png" alt="Finance Icon"
+                                        width="20" height="20" />
+                                    <span>مدیریت مالی</span>
+                                </a>
+                                <div id="flush-collapseFinance" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">صورتحساب‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">پرداخت‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">گزارش‌های مالی</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- مستندات پروژه -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseDocs" aria-expanded="false"
+                                    aria-controls="flush-collapseDocs">
+                                    <img src="/uploads/myniafam/assets/img/ico-documents.png" alt="Docs Icon" width="20"
+                                        height="20" />
+                                    <span>مستندات پروژه</span>
+                                </a>
+                                <div id="flush-collapseDocs" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">مخزن مستندات</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">ویکی</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">راهنماها</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- آموزش و بازخورد -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTraining"
+                                    aria-expanded="false" aria-controls="flush-collapseTraining">
+                                    <img src="/uploads/myniafam/assets/img/ico-training.png" alt="Training Icon"
+                                        width="20" height="20" />
+                                    <span>آموزش و بازخورد</span>
+                                </a>
+                                <div id="flush-collapseTraining" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">دوره‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">آزمون‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">نظرسنجی</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="menu__close">
+                        <a href="" id="menu-close">
+                            <img src="/uploads/myniafam/assets/img/double-arrow.png" alt="" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="header" class="layout__header">
+                <div class="layout__logo">
+                    <a href="" class="cover-link"></a>
+                    <img src="/uploads/myniafam/assets/img/niafam_logo_sticky.png" alt="" width="30" height="30">
+                </div>
+                <div class="layout__breadcrumb">
+                </div>
+                <div class="info">
+                    <div class="item theme">
+                    </div>
+                    <div class="item theme">
+                        <div class="dropdown">
+                            <div class="dropdown-toggle text__12">
+                                <img src="/uploads/myniafam/assets/img/ico-sun.svg" alt="">
+                            </div>
+                            <div class="dropdown-menu text__600 ">
+                                <ul>
+                                    <li data-theme="light-theme">
+                                        <a href="javascript:void(0);" onclick="setTheme('light-theme')">
+                                            <div class="icon">
+                                                <img src="/uploads/myniafam/assets/img/ico-sun.svg" alt="" width="16"
+                                                    height="16">
+                                            </div>
+                                            <span class="title text__12">روشن</span>
+                                        </a>
+                                    </li>
+                                    <li data-theme="dark-theme">
+                                        <a href="javascript:void(0);" onclick="setTheme('dark-theme')">
+                                            <div class="icon">
+                                                <img src="/uploads/myniafam/assets/img/ico-moon.svg" alt="" width="16"
+                                                    height="16">
+                                            </div>
+                                            <span class="title text__12">تیره</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item user">
+                        <div class="dropdown">
+                            <div class="dropdown-toggle text__12">
+                                <!--<img src="/uploads/myniafam/assets/img/user.png" alt="" width="40" height="40">-->
+                            </div>
+                            <div class="dropdown-menu text__600 ">
+                                <div class="user__info">
+                                    <div class="pic">
+
+                                    </div>
+                                    <div class="info">
+                                        <div id="user_fullname" class="fullname text__12">آیدین صاحبی</div>
+                                        <div class="username text__12  text__400"><span
+                                                id="user_username">aidin78</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="user__menu">
+                                    <li>
+                                        <a href="">
+                                            <span class="title text__12">پروفایل من</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="title text__12">امنیت</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="title text__12">راهنما</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="title text__12">خروج</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="layout__container">
                 <div class="layout__content">
                     <div class="scrollbar">
@@ -36,8 +279,7 @@
                                 <!-- Main Content Container -->
                                 <div class="table-page">
                                     <div class="page-title">
-                                        <h2 class="pagetitle text__20 text__700 ">مشکل عدم نمایش عکس های دارای تامبنیل
-                                            در خروجی نرم افزار</h2>
+                                        <h2 class="pagetitle text__20 text__700 ">جزئیات تیکت</h2>
                                     </div>
                                     <div class="ticket-page">
                                         <div class="ticket-page__tabs">
@@ -74,107 +316,520 @@
                                         </div>
 
                                         <!-- Tab Content -->
-                                        <div class="ticket-page__tab-content">
+                                        <div class="ticket-page__tab-content mb-4">
                                             <div class="tab-content" id="personTabsContent">
                                                 <!-- Users Tab Content -->
                                                 <div class="tab-pane fade show active" id="users" role="tabpanel"
                                                     aria-labelledby="users-tab">
-                                                    <ul class="ticket-page__info">
-                                                        <li>
-                                                            <span class="label">عنوان کامل :</span>
-                                                            <span class="data">
-                                                                مشکل عدم نمایش عکس های دارای تامبنیل در خروجی نرم افزار
-                                                                </span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label">وضعیت تیکت :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label">اولویت تیکت :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label">عنوان تیکت :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label">توضیحات کامل :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label"> :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label"> :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label"> :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label"> :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label"> :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label"> :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label"> :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label"> :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label"> :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label"> :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label"> :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                        <li>
-                                                            <span class="label"> :</span>
-                                                            <span class="data"></span>
-                                                        </li>
-                                                    </ul>
+                                                    <div class="ticket-detail-container">
+                                                        <!-- هدر تیکت -->
+                                                        <div class="ticket-header">
+                                                            <div class="ticket-header__info">
+                                                                <div class="ticket-number">
+                                                                    <span class="text__12 text__gray">شماره تیکت</span>
+                                                                    <span class="text__16 text__700">#1234</span>
+                                                                </div>
+                                                                <div class="ticket-badges">
+                                                                    <span class="status-badge status-in-progress">در حال
+                                                                        بررسی</span>
+                                                                    <span class="priority priority-high">اولویت
+                                                                        بالا</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ticket-actions text__13 text__medium">
+                                                                <button
+                                                                    class="button button--sm button--outline">ویرایش</button>
+                                                                <button class="button button--sm button--danger">بستن
+                                                                    تیکت</button>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- اطلاعات اصلی تیکت -->
+                                                        <div class="ticket-main-info">
+                                                            <h3 class="ticket-title text__18 text__700">مشکل در نمایش
+                                                                داشبورد مالی</h3>
+                                                            <div class="ticket-meta">
+                                                                <div class="meta-item">
+                                                                    <span class="text__12 text__gray">ایجاد شده
+                                                                        در:</span>
+                                                                    <span class="text__14 text__500">1403/09/25 -
+                                                                        14:30</span>
+                                                                </div>
+                                                                <div class="meta-item">
+                                                                    <span class="text__12 text__gray">آخرین
+                                                                        بروزرسانی:</span>
+                                                                    <span class="text__14 text__500">1403/09/25 -
+                                                                        16:45</span>
+                                                                </div>
+                                                                <div class="meta-item">
+                                                                    <span class="text__12 text__gray">کد پیگیری:</span>
+                                                                    <span
+                                                                        class="text__14 text__500">1765783888717</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- جزئیات بیشتر -->
+                                                        <div class="ticket-details-grid">
+                                                            <div class="detail-card">
+                                                                <h4 class="text__14 text__700 mb-3">موضوع</h4>
+                                                                <p class="text__14">گزارش باگ در سیستم مالی</p>
+                                                            </div>
+                                                            <div class="detail-card">
+                                                                <h4 class="text__14 text__700 mb-3">ماژول مرتبط</h4>
+                                                                <p class="text__14">مدیریت مالی</p>
+                                                            </div>
+                                                            <div class="detail-card">
+                                                                <h4 class="text__14 text__700 mb-3">محل بروز مشکل</h4>
+                                                                <p class="text__14">صفحه داشبورد مالی</p>
+                                                            </div>
+                                                            <div class="detail-card">
+                                                                <h4 class="text__14 text__700 mb-3">تاریخ تقریبی</h4>
+                                                                <p class="text__14">1403/09/20</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- شرح تیکت -->
+                                                        <div class="ticket-description">
+                                                            <h4 class="text__16 text__700 mb-3">شرح مشکل</h4>
+                                                            <div class="description-content text__14">
+                                                                <p>با سلام و احترام،</p>
+                                                                <p>پس از آخرین بروزرسانی سیستم، هنگام ورود به بخش
+                                                                    داشبورد مالی، نمودارها به درستی نمایش داده نمی‌شوند.
+                                                                    همچنین فیلترهای تاریخ کار نمی‌کنند و خطای 500 در
+                                                                    console مرورگر مشاهده می‌شود.</p>
+                                                                <p><strong>مراحل بازتولید مشکل:</strong></p>
+                                                                <ol>
+                                                                    <li>ورود به سیستم با اکانت ادمین</li>
+                                                                    <li>رفتن به بخش مدیریت مالی > داشبورد</li>
+                                                                    <li>تلاش برای تغییر بازه زمانی</li>
+                                                                    <li>مشاهده خطا و عدم نمایش اطلاعات</li>
+                                                                </ol>
+                                                                <p>لطفاً در اسرع وقت این مشکل را بررسی فرمایید.</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- فایل‌های پیوست -->
+                                                        <div class="ticket-attachments">
+                                                            <h4 class="text__16 text__700 mb-3">فایل‌های پیوست</h4>
+                                                            <div class="attachments-list">
+                                                                <div class="attachment-item">
+                                                                    <img src="/uploads/myniafam/assets/img/ico-file.png"
+                                                                        width="24" height="24" alt="">
+                                                                    <div class="attachment-info">
+                                                                        <span
+                                                                            class="text__14 text__500">screenshot-error.png</span>
+                                                                        <span class="text__12 text__gray">245 KB</span>
+                                                                    </div>
+                                                                    <a href="#"
+                                                                        class="button button--sm button--outline">دانلود</a>
+                                                                </div>
+                                                                <div class="attachment-item">
+                                                                    <img src="/uploads/myniafam/assets/img/ico-file.png"
+                                                                        width="24" height="24" alt="">
+                                                                    <div class="attachment-info">
+                                                                        <span
+                                                                            class="text__14 text__500">console-log.txt</span>
+                                                                        <span class="text__12 text__gray">12 KB</span>
+                                                                    </div>
+                                                                    <a href="#"
+                                                                        class="button button--sm button--outline">دانلود</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- اطلاعات تکمیلی -->
+                                                        <!-- <div class="ticket-additional-info">
+                                                            <div class="info-row">
+                                                                <span class="text__14 text__gray">نسخه نرم‌افزار:</span>
+                                                                <span class="text__14 text__500">v2.5.3</span>
+                                                            </div>
+                                                            <div class="info-row">
+                                                                <span class="text__14 text__gray">مرورگر:</span>
+                                                                <span class="text__14 text__500">Chrome
+                                                                    120.0.6099.109</span>
+                                                            </div>
+                                                            <div class="info-row">
+                                                                <span class="text__14 text__gray">سیستم عامل:</span>
+                                                                <span class="text__14 text__500">Windows 11</span>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
                                                 </div>
 
-                                                <!-- Logs Tab Content -->
+                                                <!-- گفتگو با پشتیبانی -->
                                                 <div class="tab-pane fade" id="logs" role="tabpanel"
                                                     aria-labelledby="logs-tab">
+                                                    <div class="conversation-container">
+                                                        <!-- پیام‌ها -->
+                                                        <div class="messages-list">
+                                                            <!-- پیام کاربر -->
+                                                            <div class="message message--user">
+                                                                <div class="message-header">
+                                                                    <div class="message-avatar">
+                                                                        <span class="text__14">ک</span>
+                                                                    </div>
+                                                                    <div class="message-info">
+                                                                        <span class="text__14 text__700">کاربر
+                                                                            (شما)</span>
+                                                                        <span class="text__12 text__gray">1403/09/25 -
+                                                                            14:30</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="message-body">
+                                                                    <p class="text__14">با سلام. مشکل در داشبورد مالی را
+                                                                        گزارش دادم. لطفاً بررسی فرمایید.</p>
+                                                                </div>
+                                                            </div>
 
+                                                            <!-- پیام پشتیبان -->
+                                                            <div class="message message--support">
+                                                                <div class="message-header">
+                                                                    <div class="message-avatar message-avatar--support">
+                                                                        <span class="text__14">پ</span>
+                                                                    </div>
+                                                                    <div class="message-info">
+                                                                        <span class="text__14 text__700">علی احمدی
+                                                                            (پشتیبان)</span>
+                                                                        <span class="text__12 text__gray">1403/09/25 -
+                                                                            15:10</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="message-body">
+                                                                    <p class="text__14">سلام و وقت بخیر. تیکت شما دریافت
+                                                                        شد و در حال بررسی است. لطفاً اطلاعات زیر را
+                                                                        ارسال فرمایید:</p>
+                                                                    <ul>
+                                                                        <li>نسخه دقیق مرورگر</li>
+                                                                        <li>تصویر از console errors</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- پیام کاربر -->
+                                                            <div class="message message--user">
+                                                                <div class="message-header">
+                                                                    <div class="message-avatar">
+                                                                        <span class="text__14">ک</span>
+                                                                    </div>
+                                                                    <div class="message-info">
+                                                                        <span class="text__14 text__700">کاربر
+                                                                            (شما)</span>
+                                                                        <span class="text__12 text__gray">1403/09/25 -
+                                                                            15:25</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="message-body">
+                                                                    <p class="text__14">بله حتماً. اطلاعات خواسته شده را
+                                                                        در فایل پیوست ارسال کردم.</p>
+                                                                    <div class="message-attachment">
+                                                                        <img src="/uploads/myniafam/assets/img/ico-file.png"
+                                                                            width="20" height="20" alt="">
+                                                                        <span class="text__13">console-errors.png</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- پیام پشتیبان -->
+                                                            <div class="message message--support">
+                                                                <div class="message-header">
+                                                                    <div class="message-avatar message-avatar--support">
+                                                                        <span class="text__14">پ</span>
+                                                                    </div>
+                                                                    <div class="message-info">
+                                                                        <span class="text__14 text__700">علی احمدی
+                                                                            (پشتیبان)</span>
+                                                                        <span class="text__12 text__gray">1403/09/25 -
+                                                                            16:45</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="message-body">
+                                                                    <p class="text__14">ممنون از همکاری شما. مشکل
+                                                                        شناسایی شد و در حال رفع است. تا 24 ساعت آینده
+                                                                        برطرف خواهد شد.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- فرم پاسخ -->
+                                                        <div class="reply-form">
+                                                            <h4 class="text__14 text__700 mb-3">ارسال پاسخ</h4>
+                                                            <textarea class="form-control" rows="4"
+                                                                placeholder="پیام خود را بنویسید..."></textarea>
+                                                            <div class="reply-actions">
+                                                                <button class="button button--sm button--white">
+                                                                    <img src="/uploads/myniafam/assets/img/ico-attach.png"
+                                                                        width="16" height="16" alt="">
+                                                                    پیوست فایل
+                                                                </button>
+                                                                <button class="button button--primary">ارسال
+                                                                    پاسخ</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
-                                                <!-- Roles Tab Content -->
+                                                <!-- لاگ‌ها -->
                                                 <div class="tab-pane fade" id="roles" role="tabpanel"
                                                     aria-labelledby="roles-tab">
+                                                    <div class="logs-container">
+                                                        <h4 class="text__16 text__700 mb-4">تاریخچه تغییرات و رویدادها
+                                                        </h4>
+                                                        <div class="logs-timeline">
+                                                            <!-- لاگ 1 -->
+                                                            <div class="log-item">
+                                                                <div class="log-icon log-icon--created">
+                                                                    <img src="/uploads/myniafam/assets/img/ico-add.png"
+                                                                        width="16" height="16" alt="">
+                                                                </div>
+                                                                <div class="log-content">
+                                                                    <div class="log-header">
+                                                                        <span class="text__14 text__700">تیکت ایجاد
+                                                                            شد</span>
+                                                                        <span class="text__12 text__gray">1403/09/25 -
+                                                                            14:30</span>
+                                                                    </div>
+                                                                    <p class="text__13 text__gray">توسط: آیدین صاحبی</p>
+                                                                </div>
+                                                            </div>
 
+                                                            <!-- لاگ 2 -->
+                                                            <div class="log-item">
+                                                                <div class="log-icon log-icon--assigned">
+                                                                    <img src="/uploads/myniafam/assets/img/ico-user.png"
+                                                                        width="16" height="16" alt="">
+                                                                </div>
+                                                                <div class="log-content">
+                                                                    <div class="log-header">
+                                                                        <span class="text__14 text__700">تیکت به پشتیبان
+                                                                            اختصاص یافت</span>
+                                                                        <span class="text__12 text__gray">1403/09/25 -
+                                                                            14:32</span>
+                                                                    </div>
+                                                                    <p class="text__13 text__gray">اختصاص داده شده به:
+                                                                        علی احمدی</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- لاگ 3 -->
+                                                            <div class="log-item">
+                                                                <div class="log-icon log-icon--status">
+                                                                    <img src="/uploads/myniafam/assets/img/ico-status.png"
+                                                                        width="16" height="16" alt="">
+                                                                </div>
+                                                                <div class="log-content">
+                                                                    <div class="log-header">
+                                                                        <span class="text__14 text__700">تغییر
+                                                                            وضعیت</span>
+                                                                        <span class="text__12 text__gray">1403/09/25 -
+                                                                            14:35</span>
+                                                                    </div>
+                                                                    <p class="text__13 text__gray">از
+                                                                        <strong>جدید</strong> به <strong>در حال
+                                                                            بررسی</strong></p>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- لاگ 4 -->
+                                                            <div class="log-item">
+                                                                <div class="log-icon log-icon--message">
+                                                                    <img src="/uploads/myniafam/assets/img/ico-message.png"
+                                                                        width="16" height="16" alt="">
+                                                                </div>
+                                                                <div class="log-content">
+                                                                    <div class="log-header">
+                                                                        <span class="text__14 text__700">پاسخ جدید از
+                                                                            پشتیبان</span>
+                                                                        <span class="text__12 text__gray">1403/09/25 -
+                                                                            15:10</span>
+                                                                    </div>
+                                                                    <p class="text__13 text__gray">علی احمدی پاسخی ارسال
+                                                                        کرد</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- لاگ 5 -->
+                                                            <div class="log-item">
+                                                                <div class="log-icon log-icon--message">
+                                                                    <img src="/uploads/myniafam/assets/img/ico-message.png"
+                                                                        width="16" height="16" alt="">
+                                                                </div>
+                                                                <div class="log-content">
+                                                                    <div class="log-header">
+                                                                        <span class="text__14 text__700">پاسخ جدید از
+                                                                            کاربر</span>
+                                                                        <span class="text__12 text__gray">1403/09/25 -
+                                                                            15:25</span>
+                                                                    </div>
+                                                                    <p class="text__13 text__gray">آیدین صاحبی پاسخی
+                                                                        ارسال کرد</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- لاگ 6 -->
+                                                            <div class="log-item">
+                                                                <div class="log-icon log-icon--priority">
+                                                                    <img src="/uploads/myniafam/assets/img/ico-priority.png"
+                                                                        width="16" height="16" alt="">
+                                                                </div>
+                                                                <div class="log-content">
+                                                                    <div class="log-header">
+                                                                        <span class="text__14 text__700">تغییر
+                                                                            اولویت</span>
+                                                                        <span class="text__12 text__gray">1403/09/25 -
+                                                                            16:00</span>
+                                                                    </div>
+                                                                    <p class="text__13 text__gray">از
+                                                                        <strong>متوسط</strong> به <strong>بالا</strong>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- لاگ 7 -->
+                                                            <div class="log-item">
+                                                                <div class="log-icon log-icon--message">
+                                                                    <img src="/uploads/myniafam/assets/img/ico-message.png"
+                                                                        width="16" height="16" alt="">
+                                                                </div>
+                                                                <div class="log-content">
+                                                                    <div class="log-header">
+                                                                        <span class="text__14 text__700">آخرین پاسخ
+                                                                            پشتیبان</span>
+                                                                        <span class="text__12 text__gray">1403/09/25 -
+                                                                            16:45</span>
+                                                                    </div>
+                                                                    <p class="text__13 text__gray">علی احمدی پاسخی ارسال
+                                                                        کرد</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
-                                                <!-- Applications Tab Content -->
+                                                <!-- نظرسنجی -->
                                                 <div class="tab-pane fade" id="applications" role="tabpanel"
                                                     aria-labelledby="applications-tab">
+                                                    <div class="survey-container">
+                                                        <div class="survey-header">
+                                                            <h4 class="text__18 text__700">ارزیابی کیفیت خدمات</h4>
+                                                            <p class="text__14 text__gray">نظر شما در بهبود کیفیت خدمات
+                                                                ما بسیار مؤثر است</p>
+                                                        </div>
 
-                                                </div>
+                                                        <div class="survey-form">
+                                                            <!-- سوال 1 -->
+                                                            <div class="survey-question">
+                                                                <label class="text__14 text__700 mb-3">رضایت کلی از
+                                                                    پاسخگویی</label>
+                                                                <div class="rating-stars">
+                                                                    <span class="star active">★</span>
+                                                                    <span class="star active">★</span>
+                                                                    <span class="star active">★</span>
+                                                                    <span class="star active">★</span>
+                                                                    <span class="star">★</span>
+                                                                </div>
+                                                            </div>
 
-                                                <!-- Security Tab Content -->
-                                                <div class="tab-pane fade" id="security" role="tabpanel"
-                                                    aria-labelledby="security-tab">
+                                                            <!-- سوال 2 -->
+                                                            <div class="survey-question">
+                                                                <label class="text__14 text__700 mb-3">سرعت پاسخگویی
+                                                                    پشتیبان</label>
+                                                                <div class="rating-options">
+                                                                    <label class="radio-option">
+                                                                        <input type="radio" name="speed"
+                                                                            value="excellent">
+                                                                        <span>عالی</span>
+                                                                    </label>
+                                                                    <label class="radio-option">
+                                                                        <input type="radio" name="speed" value="good"
+                                                                            checked>
+                                                                        <span>خوب</span>
+                                                                    </label>
+                                                                    <label class="radio-option">
+                                                                        <input type="radio" name="speed"
+                                                                            value="average">
+                                                                        <span>متوسط</span>
+                                                                    </label>
+                                                                    <label class="radio-option">
+                                                                        <input type="radio" name="speed" value="poor">
+                                                                        <span>ضعیف</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
 
+                                                            <!-- سوال 3 -->
+                                                            <div class="survey-question">
+                                                                <label class="text__14 text__700 mb-3">کیفیت پاسخ‌های
+                                                                    دریافتی</label>
+                                                                <div class="rating-options">
+                                                                    <label class="radio-option">
+                                                                        <input type="radio" name="quality"
+                                                                            value="excellent">
+                                                                        <span>عالی</span>
+                                                                    </label>
+                                                                    <label class="radio-option">
+                                                                        <input type="radio" name="quality" value="good"
+                                                                            checked>
+                                                                        <span>خوب</span>
+                                                                    </label>
+                                                                    <label class="radio-option">
+                                                                        <input type="radio" name="quality"
+                                                                            value="average">
+                                                                        <span>متوسط</span>
+                                                                    </label>
+                                                                    <label class="radio-option">
+                                                                        <input type="radio" name="quality" value="poor">
+                                                                        <span>ضعیف</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- سوال 4 -->
+                                                            <div class="survey-question">
+                                                                <label class="text__14 text__700 mb-3">آیا مشکل شما به
+                                                                    طور کامل حل شد؟</label>
+                                                                <div class="rating-options">
+                                                                    <label class="radio-option">
+                                                                        <input type="radio" name="resolved" value="yes"
+                                                                            checked>
+                                                                        <span>بله، کاملاً</span>
+                                                                    </label>
+                                                                    <label class="radio-option">
+                                                                        <input type="radio" name="resolved"
+                                                                            value="partial">
+                                                                        <span>تا حدودی</span>
+                                                                    </label>
+                                                                    <label class="radio-option">
+                                                                        <input type="radio" name="resolved" value="no">
+                                                                        <span>خیر</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- نظر متنی -->
+                                                            <div class="survey-question">
+                                                                <label class="text__14 text__700 mb-3">نظرات و پیشنهادات
+                                                                    شما</label>
+                                                                <textarea class="form-control" rows="4"
+                                                                    placeholder="لطفاً نظرات خود را با ما در میان بگذارید..."></textarea>
+                                                            </div>
+
+                                                            <!-- دکمه ارسال -->
+                                                            <div class="survey-actions">
+                                                                <button class="button button--primary">ثبت
+                                                                    نظرسنجی</button>
+                                                                <button class="button button--outline">بعداً</button>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- پیام تشکر -->
+                                                        <div class="survey-thank-you" style="display: none;">
+                                                            <div class="thank-you-icon">✓</div>
+                                                            <h4 class="text__18 text__700">متشکریم!</h4>
+                                                            <p class="text__14 text__gray">نظر شما با موفقیت ثبت شد و در
+                                                                بهبود خدمات ما مؤثر خواهد بود.</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -190,11 +845,6 @@
 
     <!-- اسکریپت‌ها -->
     <script src="/uploads/myniafam/assets/js/libs/jquery/jquery.min.js"></script>
-    <script>
-        // Load layout components
-        $("#header").load("uploads/myniafam/components/header.html");
-        $("#sidebar").load("uploads/myniafam/components/sidebar.html");
-    </script>
     <script src="/uploads/myniafam/assets/js/libs/jquery-validation/jquery.validate.min.js"></script>
     <script src="/uploads/myniafam/assets/js/libs/jquery-validation/jquery.validate.unobtrusive.min.js"></script>
     <script src="/uploads/myniafam/assets/js/libs/jalalidatepicker/jalalidatepicker.js"></script>
@@ -213,25 +863,6 @@
 
     <script src="/uploads/myniafam/assets/js/common.js"></script>
     <script type="module" src="/uploads/myniafam/assets/js/main.js"></script>
-
-    <script>
-        $(function () {
-            initAllAudioPlugins();
-            var attachments = initRealUploader($, {
-                "name": "attachments",
-                "elem": "#attachments_uploader",
-                "resize": false,
-                "ext": "",
-                "formid": "1",
-                "accept": "*/*",
-                "description": "",
-                "maxsize": "10240000",
-                "minsize": "1024",
-                "max": 10,
-                "min": 1
-            });
-        });
-    </script>
 </body>
 
 </html>

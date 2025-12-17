@@ -27,9 +27,251 @@
 <body dir="rtl">
     <div class="wrapper">
         <div class="layout" data-menu-open="false">
+            <div id="sidebar">
+                <div class="layout__menu">
+                    <div class="accordion menu-list" id="accordionExample">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
 
-            <div id="sidebar"></div>
-            <div id="header" class="layout__header"></div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="link text__500 text__14 text__darker-gray"
+                                    data-page="dashboard">
+                                    <img src="/uploads/myniafam/assets/img/ico-dash.png" alt="Dashboard Icon" width="20"
+                                        height="20" />
+                                    <span>داشبورد</span>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed active"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapsePeople"
+                                    aria-expanded="false" aria-controls="flush-collapsePeople">
+                                    <img src="/uploads/myniafam/assets/img/ico-support.png" alt="User Management Icon"
+                                        width="20" height="20" />
+                                    <span>سامانه پشتیبانی</span>
+                                </a>
+                                <div id="flush-collapsePeople" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="ticketcreate.html" class="text__500 text__14 text__darker-gray">ثبت
+                                                تیکت</a></li>
+                                        <li><a href="ticketlist.html" class="text__500 text__14 text__darker-gray">لیست
+                                                تیکت ها</a></li>
+                                        <li><a href="ticketlist.html"
+                                                class="text__500 text__14 text__darker-gray">بایگانی</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- پنل پیام‌رسانی یکپارچه -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseMessaging"
+                                    aria-expanded="false" aria-controls="flush-collapseMessaging">
+                                    <img src="/uploads/myniafam/assets/img/ico-messaging.png" alt="Messaging Icon"
+                                        width="20" height="20" />
+                                    <span>پنل پیام‌رسانی</span>
+                                </a>
+                                <div id="flush-collapseMessaging" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">صندوق پیام‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">ارسال پیام</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">تنظیمات پیام‌رسانی</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- پایش و کنترل پروژه -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseProject"
+                                    aria-expanded="false" aria-controls="flush-collapseProject">
+                                    <img src="/uploads/myniafam/assets/img/ico-project.png"
+                                        alt="Project Monitoring Icon" width="20" height="20" />
+                                    <span>پایش پروژه</span>
+                                </a>
+                                <div id="flush-collapseProject" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">داشبورد پروژه</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">وضعیت کارها</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- مدیریت مالی -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFinance"
+                                    aria-expanded="false" aria-controls="flush-collapseFinance">
+                                    <img src="/uploads/myniafam/assets/img/ico-financial.png" alt="Finance Icon"
+                                        width="20" height="20" />
+                                    <span>مدیریت مالی</span>
+                                </a>
+                                <div id="flush-collapseFinance" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">صورتحساب‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">پرداخت‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">گزارش‌های مالی</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- مستندات پروژه -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseDocs" aria-expanded="false"
+                                    aria-controls="flush-collapseDocs">
+                                    <img src="/uploads/myniafam/assets/img/ico-documents.png" alt="Docs Icon" width="20"
+                                        height="20" />
+                                    <span>مستندات پروژه</span>
+                                </a>
+                                <div id="flush-collapseDocs" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">مخزن مستندات</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">ویکی</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">راهنماها</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- آموزش و بازخورد -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTraining"
+                                    aria-expanded="false" aria-controls="flush-collapseTraining">
+                                    <img src="/uploads/myniafam/assets/img/ico-training.png" alt="Training Icon"
+                                        width="20" height="20" />
+                                    <span>آموزش و بازخورد</span>
+                                </a>
+                                <div id="flush-collapseTraining" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">دوره‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">آزمون‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">نظرسنجی</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="menu__close">
+                        <a href="" id="menu-close">
+                            <img src="/uploads/myniafam/assets/img/double-arrow.png" alt="" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="header" class="layout__header">
+                <div class="layout__logo">
+                    <a href="" class="cover-link"></a>
+                    <img src="/uploads/myniafam/assets/img/niafam_logo_sticky.png" alt="" width="30" height="30">
+                </div>
+                <div class="layout__breadcrumb">
+                </div>
+                <div class="info">
+                    <div class="item theme">
+                    </div>
+                    <div class="item theme">
+                        <div class="dropdown">
+                            <div class="dropdown-toggle text__12">
+                                <img src="/uploads/myniafam/assets/img/ico-sun.svg" alt="">
+                            </div>
+                            <div class="dropdown-menu text__600 ">
+                                <ul>
+                                    <li data-theme="light-theme">
+                                        <a href="javascript:void(0);" onclick="setTheme('light-theme')">
+                                            <div class="icon">
+                                                <img src="/uploads/myniafam/assets/img/ico-sun.svg" alt="" width="16"
+                                                    height="16">
+                                            </div>
+                                            <span class="title text__12">روشن</span>
+                                        </a>
+                                    </li>
+                                    <li data-theme="dark-theme">
+                                        <a href="javascript:void(0);" onclick="setTheme('dark-theme')">
+                                            <div class="icon">
+                                                <img src="/uploads/myniafam/assets/img/ico-moon.svg" alt="" width="16"
+                                                    height="16">
+                                            </div>
+                                            <span class="title text__12">تیره</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item user">
+                        <div class="dropdown">
+                            <div class="dropdown-toggle text__12">
+                                <!--<img src="/uploads/myniafam/assets/img/user.png" alt="" width="40" height="40">-->
+                            </div>
+                            <div class="dropdown-menu text__600 ">
+                                <div class="user__info">
+                                    <div class="pic">
+
+                                    </div>
+                                    <div class="info">
+                                        <div id="user_fullname" class="fullname text__12">آیدین صاحبی</div>
+                                        <div class="username text__12  text__400"><span
+                                                id="user_username">aidin78</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="user__menu">
+                                    <li>
+                                        <a href="">
+                                            <span class="title text__12">پروفایل من</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="title text__12">امنیت</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="title text__12">راهنما</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="title text__12">خروج</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="layout__container">
                 <div class="layout__content">
                     <div class="scrollbar">
@@ -38,20 +280,20 @@
                                 <div class="table-page">
                                     <div class="page-title">
                                         <h2 class="pagetitle text__20 text__700 mb-0">لیست تیکت ها</h2>
-                                        <a href="/ticketcreate.html" class="button text__14 button--add"
-                                            data-bs-toggle="modal" data-bs-target="#addPersonModal">
-                                            <img src="uploads/myniafam//assets/img/ico-plus.png" alt="" width="16"
+                                        <a href="ticketcreate.html" class="button text__14 button--add">
+                                            <img src="uploads/myniafam/assets/img/ico-plus.png" alt="" width="16"
                                                 height="15">
-                                            افرودن تیکت
+                                            افزودن تیکت
                                         </a>
                                     </div>
                                     <hr>
                                     <div class="filters">
                                         <div class="input">
-                                            <input type="text" class="text__14" placeholder="بنویسید">
+                                            <input type="text" id="search-input" class="text__14"
+                                                placeholder="جستجو در تیکت‌ها...">
                                         </div>
                                         <div class="combobox">
-                                            <select name="relate_module" id="relate_module">
+                                            <select name="relate_module" id="status-filter">
                                                 <option value="0">همه</option>
                                                 <option value="1">جدید</option>
                                                 <option value="2">در حال بررسی</option>
@@ -65,7 +307,7 @@
                                     </div>
                                     <div class="table table-person">
 
-                                        <table class="datatable responsive dataTableDisplay">
+                                        <table id="ticketList" class="datatable responsive dataTableDisplay">
                                             <thead>
                                                 <tr>
                                                     <th width="40%">تیکت</th>
@@ -98,11 +340,6 @@
 
     <!-- اسکریپت‌ها -->
     <script src="/uploads/myniafam/assets/js/libs/jquery/jquery.min.js"></script>
-    <script>
-        // Load layout components
-        $("#header").load("uploads/myniafam/components/header.html");
-        $("#sidebar").load("uploads/myniafam/components/sidebar.html");
-    </script>
     <script src="/uploads/myniafam/assets/js/libs/jquery-validation/jquery.validate.min.js"></script>
     <script src="/uploads/myniafam/assets/js/libs/jquery-validation/jquery.validate.unobtrusive.min.js"></script>
     <script src="/uploads/myniafam/assets/js/libs/jalalidatepicker/jalalidatepicker.js"></script>
@@ -125,9 +362,8 @@
     <script src="/uploads/myniafam/assets/js/common.js"></script>
     <script type="module" src="/uploads/myniafam/assets/js/main.js"></script>
 
-    <!-- اسکریپت صفحه تیکت‌ها -->
-    <script type="module" src="/uploads/myniafam/assets/js/api/ticket.js"></script>
-    <script type="module" src="/uploads/myniafam/assets/js/pages/tickets.js"></script>
+    <!-- اسکریپت صفحه تیکت‌ها - معماری ماژولار جدید -->
+    <script type="module" src="/uploads/myniafam/assets/js/pages/ticketList.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -155,7 +391,8 @@
                     <p>آیا از حذف این تیکت مطمئن هستید؟</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="button button--outline" data-bs-dismiss="modal" data-type="dismiss">انصراف</button>
+                    <button type="button" class="button button--outline" data-bs-dismiss="modal"
+                        data-type="dismiss">انصراف</button>
                     <button type="button" class="button button--danger" id="confirmDeleteTicket">حذف</button>
                 </div>
             </div>

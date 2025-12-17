@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد - نیافام من</title>
+    <link rel="shortcut icon" href="/uploads/myniafam/assets/img/logo.svg" type="image/x-icon">
+    <link rel="icon" href="/uploads/myniafam/assets/img/logo.svg" type="image/x-icon">
+
+    <link rel="preload" href="/uploads/myniafam/assets/fonts/Sahel-VF.woff2" as="font" type="font/woff" crossorigin />
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/select2/select2.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/iziToast/iziToast.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/OverlayScrollbars/overlayscrollbars.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/jalalidatepicker/jalalidatepicker.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/switchery/switchery.min.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/plyr/plyr.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/libs/realuploader/realUploader.classic.css">
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/espritstyle.css">
+
+    <link rel="stylesheet" href="/uploads/myniafam/assets/scss/main.css">
+
+</head>
+
+<body dir="rtl">
+    <div class="wrapper">
+        <div class="layout" data-menu-open="false">
+            <div id="sidebar">
+                <div class="layout__menu">
+                    <div class="accordion menu-list" id="accordionExample">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                            <div class="item">
+                                <a href="dashboard.html" class="link text__500 text__14 text__darker-gray active"
+                                    data-page="dashboard">
+                                    <img src="/uploads/myniafam/assets/img/ico-dash.png" alt="Dashboard Icon" width="20"
+                                        height="20" />
+                                    <span>داشبورد</span>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapsePeople"
+                                    aria-expanded="false" aria-controls="flush-collapsePeople">
+                                    <img src="/uploads/myniafam/assets/img/ico-support.png" alt="User Management Icon"
+                                        width="20" height="20" />
+                                    <span>پشتیبانی و گزارش باگ</span>
+                                </a>
+                                <div id="flush-collapsePeople" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="ticketlist.html" class="text__500 text__14 text__darker-gray">لیست
+                                                تیکت‌ها</a></li>
+                                        <li><a href="ticketcreate.html" class="text__500 text__14 text__darker-gray">ایجاد
+                                                تیکت جدید</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- پنل پیام‌رسانی یکپارچه -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseMessaging"
+                                    aria-expanded="false" aria-controls="flush-collapseMessaging">
+                                    <img src="/uploads/myniafam/assets/img/ico-messaging.png" alt="Messaging Icon"
+                                        width="20" height="20" />
+                                    <span>پنل پیام‌رسانی</span>
+                                </a>
+                                <div id="flush-collapseMessaging" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">صندوق پیام‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">ارسال پیام</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">تنظیمات پیام‌رسانی</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- پایش و کنترل پروژه -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseProject"
+                                    aria-expanded="false" aria-controls="flush-collapseProject">
+                                    <img src="/uploads/myniafam/assets/img/ico-project.png"
+                                        alt="Project Monitoring Icon" width="20" height="20" />
+                                    <span>پایش پروژه</span>
+                                </a>
+                                <div id="flush-collapseProject" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">داشبورد پروژه</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">وضعیت کارها</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- مدیریت مالی -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFinance"
+                                    aria-expanded="false" aria-controls="flush-collapseFinance">
+                                    <img src="/uploads/myniafam/assets/img/ico-financial.png" alt="Finance Icon"
+                                        width="20" height="20" />
+                                    <span>مدیریت مالی</span>
+                                </a>
+                                <div id="flush-collapseFinance" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">صورتحساب‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">پرداخت‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">گزارش‌های مالی</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- مستندات پروژه -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseDocs" aria-expanded="false"
+                                    aria-controls="flush-collapseDocs">
+                                    <img src="/uploads/myniafam/assets/img/ico-documents.png" alt="Docs Icon" width="20"
+                                        height="20" />
+                                    <span>مستندات پروژه</span>
+                                </a>
+                                <div id="flush-collapseDocs" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">مخزن مستندات</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">ویکی</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">راهنماها</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- آموزش و بازخورد -->
+                            <div class="item">
+                                <a href="javascript:void(0)"
+                                    class="link text__500 text__14 text__darker-gray accordion-button collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTraining"
+                                    aria-expanded="false" aria-controls="flush-collapseTraining">
+                                    <img src="/uploads/myniafam/assets/img/ico-training.png" alt="Training Icon"
+                                        width="20" height="20" />
+                                    <span>آموزش و بازخورد</span>
+                                </a>
+                                <div id="flush-collapseTraining" class="content accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">دوره‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">آزمون‌ها</a></li>
+                                        <li><a href="javascript:void(0)"
+                                                class="text__500 text__14 text__darker-gray">نظرسنجی</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="menu__close">
+                        <a href="" id="menu-close">
+                            <img src="/uploads/myniafam/assets/img/double-arrow.png" alt="" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="header" class="layout__header">
+                <div class="layout__logo">
+                    <a href="" class="cover-link"></a>
+                    <img src="/uploads/myniafam/assets/img/niafam_logo_sticky.png" alt="" width="30" height="30">
+                </div>
+                <div class="layout__breadcrumb">
+                </div>
+                <div class="info">
+                    <div class="item theme">
+                    </div>
+                    <div class="item theme">
+                        <div class="dropdown">
+                            <div class="dropdown-toggle text__12">
+                                <img src="/uploads/myniafam/assets/img/ico-sun.svg" alt="">
+                            </div>
+                            <div class="dropdown-menu text__600 ">
+                                <ul>
+                                    <li data-theme="light-theme">
+                                        <a href="javascript:void(0);" onclick="setTheme('light-theme')">
+                                            <div class="icon">
+                                                <img src="/uploads/myniafam/assets/img/ico-sun.svg" alt="" width="16"
+                                                    height="16">
+                                            </div>
+                                            <span class="title text__12">روشن</span>
+                                        </a>
+                                    </li>
+                                    <li data-theme="dark-theme">
+                                        <a href="javascript:void(0);" onclick="setTheme('dark-theme')">
+                                            <div class="icon">
+                                                <img src="/uploads/myniafam/assets/img/ico-moon.svg" alt="" width="16"
+                                                    height="16">
+                                            </div>
+                                            <span class="title text__12">تیره</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item user">
+                        <div class="dropdown">
+                            <div class="dropdown-toggle text__12">
+                                <!--<img src="/uploads/myniafam/assets/img/user.png" alt="" width="40" height="40">-->
+                            </div>
+                            <div class="dropdown-menu text__600 ">
+                                <div class="user__info">
+                                    <div class="pic">
+
+                                    </div>
+                                    <div class="info">
+                                        <div id="user_fullname" class="fullname text__12">آیدین صاحبی</div>
+                                        <div class="username text__12  text__400"><span
+                                                id="user_username">aidin78</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="user__menu">
+                                    <li>
+                                        <a href="">
+                                            <span class="title text__12">پروفایل من</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="title text__12">امنیت</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="title text__12">راهنما</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span class="title text__12">خروج</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layout__container">
+                <div class="layout__content">
+                    <div class="scrollbar">
+                        <div class="inpage">
+                            <div id="main-content" class="inpage">
+                                <!-- Dashboard Content -->
+                                <div class="dashboard-page">
+                                    <div class="page-title">
+                                        <h2 class="pagetitle text__20 text__700">داشبورد</h2>
+                                    </div>
+
+                                    <!-- آمار کلی -->
+                                    <div class="dashboard-stats">
+                                        <div class="stat-card stat-card--primary">
+                                            <div class="stat-card__icon">
+                                                <img src="/uploads/myniafam/assets/img/ico-support.png" width="32"
+                                                    height="32" alt="">
+                                            </div>
+                                            <div class="stat-card__content">
+                                                <span class="text__12 text__gray">کل تیکت‌ها</span>
+                                                <h3 class="text__24 text__700">247</h3>
+                                                <span class="stat-card__change positive">
+                                                    <span>↑ 12%</span>
+                                                    نسبت به ماه قبل
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="stat-card stat-card--success">
+                                            <div class="stat-card__icon">
+                                                <img src="/uploads/myniafam/assets/img/ico-project.png" width="32"
+                                                    height="32" alt="">
+                                            </div>
+                                            <div class="stat-card__content">
+                                                <span class="text__12 text__gray">پروژه‌های فعال</span>
+                                                <h3 class="text__24 text__700">12</h3>
+                                                <span class="stat-card__change positive">
+                                                    <span>↑ 3</span>
+                                                    پروژه جدید
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="stat-card stat-card--warning">
+                                            <div class="stat-card__icon">
+                                                <img src="/uploads/myniafam/assets/img/ico-messaging.png" width="32"
+                                                    height="32" alt="">
+                                            </div>
+                                            <div class="stat-card__content">
+                                                <span class="text__12 text__gray">پیام‌های جدید</span>
+                                                <h3 class="text__24 text__700">38</h3>
+                                                <span class="stat-card__change">
+                                                    <span>24</span>
+                                                    خوانده نشده
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- بخش نمودار و جداول -->
+                                    <div class="dashboard-content">
+                                        <!-- نمودار فعالیت -->
+                                        <div class="dashboard-card">
+                                            <div class="dashboard-card__header">
+                                                <h4 class="text__16 text__700">نمودار فعالیت</h4>
+                                                <select class="form-select form-select-sm">
+                                                    <option>7 روز اخیر</option>
+                                                    <option>30 روز اخیر</option>
+                                                    <option>3 ماه اخیر</option>
+                                                </select>
+                                            </div>
+                                            <div class="dashboard-card__body">
+                                                <div class="chart-container">
+                                                    <canvas id="activityChart" height="80"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- آخرین تیکت‌ها -->
+                                        <div class="dashboard-card">
+                                            <div class="dashboard-card__header">
+                                                <h4 class="text__16 text__700">آخرین تیکت‌ها</h4>
+                                                <a href="ticketlist.html" class="text__13 text__primary">مشاهده همه</a>
+                                            </div>
+                                            <div class="dashboard-card__body">
+                                                <div class="tickets-list">
+                                                    <div class="ticket-item">
+                                                        <div class="ticket-item__info">
+                                                            <span class="text__14 text__700">#1234 - مشکل در داشبورد
+                                                                مالی</span>
+                                                            <span class="text__12 text__gray">1403/09/25 - 14:30</span>
+                                                        </div>
+                                                        <div class="ticket-item__status">
+                                                            <span class="status-badge status-in-progress">در حال
+                                                                بررسی</span>
+                                                            <span class="priority priority-high">بالا</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="ticket-item">
+                                                        <div class="ticket-item__info">
+                                                            <span class="text__14 text__700">#1233 - درخواست ویژگی
+                                                                جدید</span>
+                                                            <span class="text__12 text__gray">1403/09/24 - 16:20</span>
+                                                        </div>
+                                                        <div class="ticket-item__status">
+                                                            <span class="status-badge status-new">جدید</span>
+                                                            <span class="priority priority-medium">متوسط</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="ticket-item">
+                                                        <div class="ticket-item__info">
+                                                            <span class="text__14 text__700">#1232 - خطا در صفحه
+                                                                ورود</span>
+                                                            <span class="text__12 text__gray">1403/09/24 - 10:15</span>
+                                                        </div>
+                                                        <div class="ticket-item__status">
+                                                            <span class="status-badge status-doing">در حال انجام</span>
+                                                            <span class="priority priority-critical">بحرانی</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="ticket-item">
+                                                        <div class="ticket-item__info">
+                                                            <span class="text__14 text__700">#1231 - سوال درباره
+                                                                API</span>
+                                                            <span class="text__12 text__gray">1403/09/23 - 18:45</span>
+                                                        </div>
+                                                        <div class="ticket-item__status">
+                                                            <span class="status-badge status-closed">بسته شده</span>
+                                                            <span class="priority priority-low">پایین</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="ticket-item">
+                                                        <div class="ticket-item__info">
+                                                            <span class="text__14 text__700">#1230 - بهبود
+                                                                عملکرد</span>
+                                                            <span class="text__12 text__gray">1403/09/23 - 12:30</span>
+                                                        </div>
+                                                        <div class="ticket-item__status">
+                                                            <span class="status-badge status-need-info">نیاز به
+                                                                اطلاعات</span>
+                                                            <span class="priority priority-medium">متوسط</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- بخش پایینی -->
+                                    <div class="dashboard-bottom">
+                                        <!-- فعالیت‌های اخیر -->
+                                        <div class="dashboard-card dashboard-card--wide">
+                                            <div class="dashboard-card__header">
+                                                <h4 class="text__16 text__700">فعالیت‌های اخیر</h4>
+                                            </div>
+                                            <div class="dashboard-card__body">
+                                                <div class="activities-list">
+                                                    <div class="activity-item">
+                                                        <div class="activity-item__icon activity-icon--created">
+                                                            <img src="/uploads/myniafam/assets/img/ico-add.png"
+                                                                width="16" height="16" alt="">
+                                                        </div>
+                                                        <div class="activity-item__content">
+                                                            <p class="text__14"><strong>آیدین صاحبی</strong> تیکت جدیدی
+                                                                ایجاد کرد</p>
+                                                            <span class="text__12 text__gray">2 ساعت پیش</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="activity-item">
+                                                        <div class="activity-item__icon activity-icon--message">
+                                                            <img src="/uploads/myniafam/assets/img/ico-message.png"
+                                                                width="16" height="16" alt="">
+                                                        </div>
+                                                        <div class="activity-item__content">
+                                                            <p class="text__14"><strong>علی احمدی</strong> به تیکت #1234
+                                                                پاسخ داد</p>
+                                                            <span class="text__12 text__gray">3 ساعت پیش</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="activity-item">
+                                                        <div class="activity-item__icon activity-icon--status">
+                                                            <img src="/uploads/myniafam/assets/img/ico-status.png"
+                                                                width="16" height="16" alt="">
+                                                        </div>
+                                                        <div class="activity-item__content">
+                                                            <p class="text__14">وضعیت تیکت #1233 به <strong>در حال
+                                                                    انجام</strong> تغییر کرد</p>
+                                                            <span class="text__12 text__gray">5 ساعت پیش</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="activity-item">
+                                                        <div class="activity-item__icon activity-icon--assigned">
+                                                            <img src="/uploads/myniafam/assets/img/ico-user.png"
+                                                                width="16" height="16" alt="">
+                                                        </div>
+                                                        <div class="activity-item__content">
+                                                            <p class="text__14">تیکت #1232 به <strong>محمد رضایی</strong>
+                                                                اختصاص یافت</p>
+                                                            <span class="text__12 text__gray">8 ساعت پیش</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="activity-item">
+                                                        <div class="activity-item__icon activity-icon--closed">
+                                                            <img src="/uploads/myniafam/assets/img/ico-check.png"
+                                                                width="16" height="16" alt="">
+                                                        </div>
+                                                        <div class="activity-item__content">
+                                                            <p class="text__14">تیکت #1231 بسته شد</p>
+                                                            <span class="text__12 text__gray">دیروز</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- توزیع وضعیت تیکت‌ها -->
+                                        <div class="dashboard-card">
+                                            <div class="dashboard-card__header">
+                                                <h4 class="text__16 text__700">توزیع وضعیت تیکت‌ها</h4>
+                                            </div>
+                                            <div class="dashboard-card__body">
+                                                <div class="status-distribution">
+                                                    <div class="status-item">
+                                                        <div class="status-item__bar">
+                                                            <div class="status-bar status-bar--new"
+                                                                style="width: 25%"></div>
+                                                        </div>
+                                                        <div class="status-item__info">
+                                                            <span class="text__13">جدید</span>
+                                                            <span class="text__14 text__700">62</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="status-item">
+                                                        <div class="status-item__bar">
+                                                            <div class="status-bar status-bar--progress"
+                                                                style="width: 35%"></div>
+                                                        </div>
+                                                        <div class="status-item__info">
+                                                            <span class="text__13">در حال بررسی</span>
+                                                            <span class="text__14 text__700">87</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="status-item">
+                                                        <div class="status-item__bar">
+                                                            <div class="status-bar status-bar--doing"
+                                                                style="width: 20%"></div>
+                                                        </div>
+                                                        <div class="status-item__info">
+                                                            <span class="text__13">در حال انجام</span>
+                                                            <span class="text__14 text__700">49</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="status-item">
+                                                        <div class="status-item__bar">
+                                                            <div class="status-bar status-bar--closed"
+                                                                style="width: 40%"></div>
+                                                        </div>
+                                                        <div class="status-item__info">
+                                                            <span class="text__13">بسته شده</span>
+                                                            <span class="text__14 text__700">98</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="status-item">
+                                                        <div class="status-item__bar">
+                                                            <div class="status-bar status-bar--need-info"
+                                                                style="width: 15%"></div>
+                                                        </div>
+                                                        <div class="status-item__info">
+                                                            <span class="text__13">نیاز به اطلاعات</span>
+                                                            <span class="text__14 text__700">37</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- اسکریپت‌ها -->
+    <script src="/uploads/myniafam/assets/js/libs/jquery/jquery.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/jquery-validation/jquery.validate.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/jquery-validation/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/jalalidatepicker/jalalidatepicker.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/switchery/switchery.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/tinymce/tinymce.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/select2/select2.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/iziToast/iziToast.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/OverlayScrollbars/overlayscrollbars.browser.es6.min.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/plyr/plyr.js"></script>
+    <script src="/uploads/myniafam/assets/js/libs/realuploader/realuploader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <!-- لود کردن ماژول‌های Niafam -->
+    <script src="uploads/myniafam/assets/js/utils/validation.js"></script>
+    <script src="uploads/myniafam/assets/js/utils/alert.js"></script>
+
+    <script src="/uploads/myniafam/assets/js/common.js"></script>
+    <script type="module" src="/uploads/myniafam/assets/js/main.js"></script>
+
+    <!-- اسکریپت نمودار -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('activityChart');
+            if (ctx) {
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['شنبه', 'یکشنبه', 'دوشنبه', 'سه‌شنبه', 'چهارشنبه', 'پنج‌شنبه', 'جمعه'],
+                        datasets: [{
+                            label: 'تیکت‌های جدید',
+                            data: [12, 19, 15, 25, 22, 30, 28],
+                            borderColor: '#007bff',
+                            backgroundColor: 'rgba(0, 123, 255, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        },
+                        {
+                            label: 'تیکت‌های بسته شده',
+                            data: [8, 15, 12, 18, 16, 22, 20],
+                            borderColor: '#28a745',
+                            backgroundColor: 'rgba(40, 167, 69, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                                rtl: true
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-const domain = "https://my.niafam.com";
+const domain = "http://my.niafam.com";
 
 var translates = {
         "fa": {
